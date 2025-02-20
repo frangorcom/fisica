@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+.contenedor-imagen {
+  width: 100%; /* Ocupa todo el ancho de la sección */
+  height: 200px; /* Altura fija para el contenedor */
+  overflow: hidden; /* Oculta el exceso de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.contenedor-imagen img {
+  width: 80%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* La imagen ocupa todo el alto del contenedor */
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+@media (max-width: 768px) {
+  .contenedor-imagen {
+    height: 150px; /* Altura más pequeña en móviles */
+  }
+}
