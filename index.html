@@ -7,16 +7,28 @@
   <link rel="stylesheet" href="main/main.css">
   <link rel="stylesheet" href="main/index.css">
   <link rel="stylesheet" href="main/boton.css">
+  <link rel="stylesheet" type="main/media.css" href="">
 </head>
 <body>
   <header>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <h1>Aprendiendo sobre <span id="typed"></span></h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <ul>
-                <li><a href="#introduccion">Conceptos</a></li>
-                <li><a href="#conceptos">Ejercicios</a></li>
-                <li><a href="./App/Componentes.html">Aplicaciones</a></li>
+                <li><a href="#introduccion">Inicio</a></li>
+                <li><a href="#conceptos">Ejercicios</a>
+                  <ul class="submenu">
+                      <li><a href="#">Subopción 1</a></li>
+                      <li><a href="#">Subopción 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#com2D">Aplicaciones</a>
+                  <ul class="submenu">
+                      <li><a href="#">Subopción 1</a></li>
+                      <li><a href="#">Subopción 2</a></li>
+                  </ul>
+                </li>
                 <li><a href="#contacto">Opiniones</a></li>
             </ul>
         </nav>

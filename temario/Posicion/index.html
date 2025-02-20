@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vectores</title>
+  <link rel="stylesheet" href="../../main/boton.css">
+  <link rel="stylesheet" href="../../main/section.css">
+  <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+        <h1>Aprendiendo sobre <span id="typed"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="#conceptos">Ejercicios</a></li>
+                <li><a href="#com2D">Aplicaciones</a></li>
+                <li><a href="#contacto">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="container">
+    <section class="seccion">
+      <h2>Componentes de Vectores</h2>
+      <p>Un vector se puede descomponer en vectores que se proyectan sobre los ejes a lo largo de un sistema de un sistema de coordenadas, estos tomando en cuenta el origen del vector, además que deben de cumplir con las siguientes características, los vectores deben de tener una magnitud igual o menor que la del vector original, estos deben de obedecer el sentido respectivo en el eje en el que se dibujen, y la suma de estos deben ser igual al vector original</p>
+    </section>
+      <section> 
+        <h3>Vectores en 2 dimensiones</h3>
+        <p>En un plano cartesiano, nuestro vector \(\vec{v} \) tiene componentes en los ejes \(x, y \); esto se puede representar como \(\vec{v}=\langle\vec{v_x},\vec{v_y}\rangle \). Además dentro de la definición tenemos que \(\vec{|v|}=\sqrt{\vec{v_x^2}+\vec{v_y^2}}\), pero ahora ¿cómo calcular estos componentes?</p>
+        <p>Para calcular el componente \(\vec{v_x}\) tenemos:</p>
+        <p>\(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\)</p>
+        <p>Para calcular el componente \(\vec{v_x}\) tenemos:</p>
+        <p>\(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)</p>
+        <p>Tomando a \(\theta\) como el ángulo entre el vector \(\vec{v}\) y el eje \(x\)</p>
+        <p>Por ejemplo:</p>
+        <div class="contenedor-imagen">
+          <img src="../../img/vec.jpg">
+        </div>
+        <p>Ausumiendo que nuestro cevtor \(\vec{F}\) tiene una magnitud igual a 10, ¿qué valor tendrían sus componentes? Para eso se realiza lo siguiente:</p>
+        <p>Sustituyendo en \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) tenemos que:</p>
+        <p>\(\vec{v_x}=10\cdot\cos(60°)\)</p>
+        <p>\(\vec{v_x}=10\cdot\frac{1}{2}\)</p>
+        <p>Teniendo así que \(\vec{v_x}=5\) Ahora para \(\vec{v_x}\) se realiza:</p>
+        <p>Sustituyendo en \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) tenemos que:</p>
+        <p>\(\vec{v_x}=10\cdot\sin(60°)\)</p>
+        <p>\(\vec{v_x}=10\cdot\frac{\sqrt{3}}{2}\)</p>
+        <p>Teniendo así que \(\vec{v_x}=5\sqrt{3}\), por lo que \(\vec{F}=\langle 5,5\sqrt{3}\rangle\)</p>
+        <a href="#componentes" class="boton">Ir a ejercicios</a>
+        <p></p>
+      </section>
+      <section> 
+        <h4>Aplicación para descomponer un vector en 2 dimensiones</h4>
+        <p>Para utilizar la aplicación varie los datos y observe cómo cambian los componentes dependiendo la magnitud y el ángulo</p>
+        <div id="com2D"></div>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; Equipo 3</p>
+    <p>&copy; <span id="participantes"></span></p>
+  </footer>
+  <script type="module" src="../../java/index2.js"></script>
+  <script type="module" src="../../java/com.js"></script>
+  <script src="../../App/com.js"></script>
+</body>
+</html>
