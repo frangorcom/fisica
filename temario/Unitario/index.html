@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="../ejercicios/">Ejercicios</a></li>
                 <li><a href=>Aplicaciones</a>
                   <ul class="submenu">
                       <li><a href="../Componentes/#App">Componentes</a></li>
@@ -34,20 +34,20 @@
     <section class="seccion">
       <h2>Vector unitario</h2>
       <p>Un vector unitario, también conocido como vector normalizado, es un vector que tiene dirección y sentido. No tiene dimensión y su magnitud o módulo es igual a uno este comuúnmente representado como: \(\vec{|\hat{v}|}=1\)</p>
+      <p>También el vector unitario puede representarse como: \(\hat{v}=\frac{\vec{v}}{\vec{|v|}}\)</p>
       <p>Este vector nos permite representar la dirección y sentido de cualquier vector de forma prácica, facilitando cálculos como el del ángulo resultante entre 2 vectores, cabe señalar que el vector unitario al igual que cualquier vector puede pertencer a cualquier dimensión de \(N\leq 2\)</p>
     </section>
       <section> 
-        <h3>Calcular el vector posicion</h3>
-        <p>Encuentra el vector posición y su modulo en el punto \(P(-1,2)\)</p>
-        <p>Para calcular el vector \(\vec{r}\) en el punto \(P\):</p>
-        <p>Sustituyendo en \(\vec{r}=xi+yj+zk\) tenemos que:</p>
-        <p>\(\vec{r}=-1\cdot i+2\cdot j+0\cdot z\)</p>
-        <p>Teniendo así que \(\vec{r}=\vec{-i}+\vec{2j}\)</p>
-        <p>Para \(\vec{|r|}\) se calcula:</p>
-        <p>Sustituyendo \(\vec{|r|}=\sqrt{xi^2+yj^2+zk^2}\) tenemos que:</p>
-        <p>\(\vec{|r|}=\sqrt{(-1)^2+2^2+0^2}\)</p>
-        <p>Teniendo así \(\vec{|r|}=\sqrt{5}\)</p>
-        <a href="#componentes" class="boton">Ir a ejercicios</a>
+        <h3>Calcular el vector unitario</h3>
+        <p>Teniendo \(\vec{v}=\langle 3,4 \rangle\) para calcular su vector unitario se realiza:</p>
+        <p>Para calcular el modulo del \(\vec{v}\):</p>
+        <p>Sustituyendo en \(\vec{|v|}=\sqrt{\vec{v_x^2}+\vec{v_y^2}}\) tenemos que:</p>
+        <p>\(\vec{|v|}=\sqrt{3^2+4^2}\)</p>
+        <p>Teniendo así que \(\vec{|v|}=5\)</p>
+        <p>Ahora sustituyendo en \(\hat{v}=\langle \frac{v_x}{\vec{|v|}}, \frac{v_y}{\vec{|v|}}\rangle\) tenemos:</p>
+        <p>\(\hat{v}=\langle \frac{3}{5}, \frac{4}{5}\rangle\)</p>
+        <p>Teniendo así el valor de los componentes de nuestro vector unitario para dibujarlo en el plano</p>
+        <a href="../ejercicios/#Unitario" class="boton">Ir a ejercicios</a>
       </section>
       <section id="App"> 
         <h4>Aplicación para obtener un vector posicion</h4>
@@ -61,6 +61,6 @@
   </footer>
   <script type="module" src="../../java/index2.js"></script>
   <script type="module" src="../../java/uni.js"></script>
-  <script src="../../App/vec.js"></script>
+  <script src="../../App/uni.js"></script>
 </body>
 </html>

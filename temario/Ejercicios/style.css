@@ -1,0 +1,25 @@
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mostrar el procedimiento cuando se active */
+#procedimiento-1,
+#procedimiento-2 {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}

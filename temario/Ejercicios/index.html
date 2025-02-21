@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vectores</title>
+  <link rel="stylesheet" href="../../main/boton.css">
+  <link rel="stylesheet" href="../../main/section.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+        <h1>Ejercicios sobre <span id="typed"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="#">Ejercicios</a></li>
+                <li><a href=>Aplicaciones</a>
+                  <ul class="submenu">
+                      <li><a href="../Componentes/#App">Componentes</a></li>
+                      <li><a href="../Posicion/#App">Posicion</a></li>
+                      <li><a href="../Unitario/#App">Unitario</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contacto">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="container">
+    <section id="Componentes">
+      <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el este, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
+      <div id="procedimiento-1" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Sabiendo que \(\vec{|v|}=\sqrt{v_x^2+v_y^2}\).<br><br>
+          2. Sustituimos y tenemos que \(\vec{|v|}=\sqrt{2^2+10^2}\)<br><br>
+          3. Por lo tanto \(\vec{|v|}\approx 10.2 km\).<br><br>
+          4. Tomamos el vector \(\vec{v_x}\) para calcular \(\theta\) y sabiendo que \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\)<br><br>
+          5. Despejamos y tenemos que \(\theta=\arccos(\frac{\vec{|v_x|}}{\vec{|v|}})\).<br><br>
+          6. Sustitumos y tenemos que \(\theta=\arccos(\frac{2}{10})\).<br><br>
+          7. Por lo tanto \(\theta=78.46°\).<br><br>
+        </p>
+      </div>
+      <button id="mostrar-solucion-1">Solución</button>
+      <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
+      <div id="procedimiento-2" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Calculamos el desplazamiento sobre el plano horizontal, sabiendo que \(\vec{v}=\sqrt{v_x^2+v_y^2+v_z^2}\) y que \(Desplazamiento_h=\sqrt{v_x^2+v_y^2}\) es el desplazamineto horizontal<br>
+          2. Despejamos y tenemos que \(Desplazamiento_h=\sqrt{|v|^2-v_z^2}\)<br><br>
+          3. Sustituimos \(Desplazamiento_h=\sqrt{200^2-10^2}\).<br><br>
+          4. Por lo que \(Desplazamiento_h=199.75\). <br><br>
+          5. Ahora calculamos los componentes \(x,y\) esto con las formulas de componentes: <br><br>
+          6. Sustituimos \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) y \(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)<br><br>
+          7. Tenemos que \(\vec{v_x}=199.75\cdot\cos(60°)\) y \(\vec{v_y}=199.75\cdot\sin(60°)\)<br><br>
+          8. Por lo que recorrió hacia el norte 99.88 km y hacia el este 172.93 km
+        </p>
+      </div>
+      <button id="mostrar-solucion-2">Solución</button>
+    </section>
+    <section id="Posicion">
+      <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el sur, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
+      <div id="procedimiento-3" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Resta \( x \) de ambos lados: \( 2 = x - 1 \).<br>
+          2. Suma 1 a ambos lados: \( 3 = x \).<br>
+          3. Por lo tanto, \( x = 3 \).
+        </p>
+      </div>
+      <button id="mostrar-solucion-3">Solución</button>
+      <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
+      <div id="procedimiento-4" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Calculamos el desplazamiento sobre el plano horizontal, sabiendo que \(\vec{v}=\sqrt{v_x^2+v_y^2+v_z^2}\) y que \(Desplazamiento_h=\sqrt{v_x^2+v_y^2}\) es el desplazamineto horizontal<br>
+          2. Despejamos y tenemos que \(Desplazamiento_h=\sqrt{|v|^2-v_z^2}\)<br><br>
+          3. Sustituimos \(Desplazamiento_h=\sqrt{200^2-10^2}\).<br><br>
+          4. Por lo que \(Desplazamiento_h=199.75\). <br><br>
+          5. Ahora calculamos los componentes \(x,y\) esto con las formulas de componentes: <br><br>
+          6. Sustituimos \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) y \(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)<br><br>
+          7. Tenemos que \(\vec{v_x}=199.75\cdot\cos(60°)\) y \(\vec{v_y}=199.75\cdot\sin(60°)\)<br><br>
+          8. Por lo que recorrió hacia el norte 99.88 km y hacia el este 172.93 km
+        </p>
+      </div>
+      <button id="mostrar-solucion-4">Solución</button>
+    </section>
+    <section id="Unitario">
+      <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el sur, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
+      <div id="procedimiento-3" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Resta \( x \) de ambos lados: \( 2 = x - 1 \).<br>
+          2. Suma 1 a ambos lados: \( 3 = x \).<br>
+          3. Por lo tanto, \( x = 3 \).
+        </p>
+      </div>
+      <button id="mostrar-solucion-3">Solución</button>
+      <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
+      <div id="procedimiento-4" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Calculamos el desplazamiento sobre el plano horizontal, sabiendo que \(\vec{v}=\sqrt{v_x^2+v_y^2+v_z^2}\) y que \(Desplazamiento_h=\sqrt{v_x^2+v_y^2}\) es el desplazamineto horizontal<br>
+          2. Despejamos y tenemos que \(Desplazamiento_h=\sqrt{|v|^2-v_z^2}\)<br><br>
+          3. Sustituimos \(Desplazamiento_h=\sqrt{200^2-10^2}\).<br><br>
+          4. Por lo que \(Desplazamiento_h=199.75\). <br><br>
+          5. Ahora calculamos los componentes \(x,y\) esto con las formulas de componentes: <br><br>
+          6. Sustituimos \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) y \(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)<br><br>
+          7. Tenemos que \(\vec{v_x}=199.75\cdot\cos(60°)\) y \(\vec{v_y}=199.75\cdot\sin(60°)\)<br><br>
+          8. Por lo que recorrió hacia el norte 99.88 km y hacia el este 172.93 km
+        </p>
+      </div>
+      <button id="mostrar-solucion-4">Solución</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Equipo 3</p>
+    <p>&copy; <span id="participantes"></span></p>
+  </footer>
+  <script type="module" src="../../java/index2.js"></script>
+  <script type="module" src="../../java/eje.js"></script>
+  <script src="java.js"></script>
+</body>
+</html>
