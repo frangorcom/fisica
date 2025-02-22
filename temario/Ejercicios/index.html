@@ -32,6 +32,7 @@
 
   <main class="container">
     <section id="Componentes">
+      <h3>Componentes 2 dimensiones</h3>
       <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el este, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
       <div id="procedimiento-1" class="hidden">
         <h3>Procedimiento:</h3>
@@ -46,6 +47,7 @@
         </p>
       </div>
       <button id="mostrar-solucion-1">Solución</button>
+      <h3>Componentes 3 dimensiones</h3>
       <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
       <div id="procedimiento-2" class="hidden">
         <h3>Procedimiento:</h3>
@@ -63,55 +65,42 @@
       <button id="mostrar-solucion-2">Solución</button>
     </section>
     <section id="Posicion">
-      <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el sur, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
+      <h3>Vector posición</h3>
+      <p>Un Barco parte del puerto en \(A(2,3)\) km y se dirige al punto \(B(8,9)\) km. Dibuja el vector en el punto \(B\) y el vector del desplazamiento \(\vec{AB}\)</p>
       <div id="procedimiento-3" class="hidden">
-        <h3>Procedimiento:</h3>
+        <h3>Solución:</h3>
+        <p>El vector dibujado debe ser:</p>
+        <div class="contenedor-imagen">
+          <img src="../../img/sol1.jpg">
+        </div>
         <p>
-          1. Resta \( x \) de ambos lados: \( 2 = x - 1 \).<br>
-          2. Suma 1 a ambos lados: \( 3 = x \).<br>
-          3. Por lo tanto, \( x = 3 \).
+          Para el desplazamiento: <br><br>
+          1.Calculamos el desplazamiento con: \(B-A\).<br><br>
+          2. Sustituimos y tenemos \((8,9)-(2,3)\).<br><br>
+          3. Tenemos que el desplazamiento es: \(6,6\)<br><br>
+          Dibujado queda como:
         </p>
+        <div class="contenedor-imagen">
+          <img src="../../img/sol2.jpg">
+        </div>
       </div>
       <button id="mostrar-solucion-3">Solución</button>
-      <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
-      <div id="procedimiento-4" class="hidden">
-        <h3>Procedimiento:</h3>
-        <p>
-          1. Calculamos el desplazamiento sobre el plano horizontal, sabiendo que \(\vec{v}=\sqrt{v_x^2+v_y^2+v_z^2}\) y que \(Desplazamiento_h=\sqrt{v_x^2+v_y^2}\) es el desplazamineto horizontal<br>
-          2. Despejamos y tenemos que \(Desplazamiento_h=\sqrt{|v|^2-v_z^2}\)<br><br>
-          3. Sustituimos \(Desplazamiento_h=\sqrt{200^2-10^2}\).<br><br>
-          4. Por lo que \(Desplazamiento_h=199.75\). <br><br>
-          5. Ahora calculamos los componentes \(x,y\) esto con las formulas de componentes: <br><br>
-          6. Sustituimos \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) y \(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)<br><br>
-          7. Tenemos que \(\vec{v_x}=199.75\cdot\cos(60°)\) y \(\vec{v_y}=199.75\cdot\sin(60°)\)<br><br>
-          8. Por lo que recorrió hacia el norte 99.88 km y hacia el este 172.93 km
-        </p>
-      </div>
-      <button id="mostrar-solucion-4">Solución</button>
     </section>
     <section id="Unitario">
-      <p>Un explorador recorrió 10 km hacia el norte y 2 km hacia el sur, ¿cuál fue la magnitud y el ángulo de su desplazamiento?</p>
-      <div id="procedimiento-3" class="hidden">
-        <h3>Procedimiento:</h3>
-        <p>
-          1. Resta \( x \) de ambos lados: \( 2 = x - 1 \).<br>
-          2. Suma 1 a ambos lados: \( 3 = x \).<br>
-          3. Por lo tanto, \( x = 3 \).
-        </p>
-      </div>
-      <button id="mostrar-solucion-3">Solución</button>
-      <p>Un avión recorrió 200 km con 60° hacia el norte, si el avión se elevo 10 km, responde ¿cuánto recorrió hacia el norte y hacia el este?</p>
+      <h3>Vector unitario</h3>
+      <p>Dado el vector \(\vec{F} = 10i+24j+30k\) calcula el vector unitario y expresa un vector \(\vec{r}\) con una magnitud de \(50 N\) con la misma dirección y sentido que \(\vec{F}\)</p>
       <div id="procedimiento-4" class="hidden">
         <h3>Procedimiento:</h3>
         <p>
-          1. Calculamos el desplazamiento sobre el plano horizontal, sabiendo que \(\vec{v}=\sqrt{v_x^2+v_y^2+v_z^2}\) y que \(Desplazamiento_h=\sqrt{v_x^2+v_y^2}\) es el desplazamineto horizontal<br>
-          2. Despejamos y tenemos que \(Desplazamiento_h=\sqrt{|v|^2-v_z^2}\)<br><br>
-          3. Sustituimos \(Desplazamiento_h=\sqrt{200^2-10^2}\).<br><br>
-          4. Por lo que \(Desplazamiento_h=199.75\). <br><br>
-          5. Ahora calculamos los componentes \(x,y\) esto con las formulas de componentes: <br><br>
-          6. Sustituimos \(\vec{v_x}=\vec{|v|}\cdot\cos(\theta)\) y \(\vec{v_y}=\vec{|v|}\cdot\sin(\theta)\)<br><br>
-          7. Tenemos que \(\vec{v_x}=199.75\cdot\cos(60°)\) y \(\vec{v_y}=199.75\cdot\sin(60°)\)<br><br>
-          8. Por lo que recorrió hacia el norte 99.88 km y hacia el este 172.93 km
+          1. Calculamos \(vec{|F|}\) sabiendo que \(\vec{|v|}=\sqrt{xi^2+yj^2+zk^2}\)<br><br>
+          2. Sustituimos y tenemos que \(\vec{|F|}=\sqrt{10^2+24^2+30^2}\)<br><br>
+          3. Obteniendo que \(\vec{|F|} \approx 39.7\).<br><br>
+          4. Ahora sabiendo que \(\hat{u}=\frac{\vec{F}}{\vec{|F|}}\). <br><br>
+          5. Tenemos que \(\hat{u}=(\frac{10}{39.7},\frac{24}{39.7},\frac{30}{39.7})\). Es decir  \(\hat{u}\approx (0.252, 0.606, 0.756)\)<br><br>
+          6. Para el vector \(\vec{r}\):<br><br>
+          7. Tenemos que \(\vec{r}=50\hat{u}\)<br><br>
+          8. Sustituimos y tenemos que \(\vec{r} \approx 50\cdot (0.252,0.606,0.756)\)<br><br>
+          9. Así tenemos que \(\vec{r} \approx (12.6i,30.25j,37.8k)\)
         </p>
       </div>
       <button id="mostrar-solucion-4">Solución</button>

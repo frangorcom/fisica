@@ -94,7 +94,7 @@ footer {
 }
 .contenedor-imagen {
   width: 100%; /* Ocupa todo el ancho de la sección */
-  height: 200px; /* Altura fija para el contenedor */
+  height: 250px; /* Altura fija para el contenedor */
   overflow: hidden; /* Oculta el exceso de la imagen */
   border-radius: 8px; /* Bordes redondeados */
 }
