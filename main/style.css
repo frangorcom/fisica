@@ -17,7 +17,9 @@ button:hover {
 
 /* Mostrar el procedimiento cuando se active */
 #procedimiento-1,
-#procedimiento-2 {
+#procedimiento-2,
+#procedimiento-3,
+#procedimiento-4 {
   margin-top: 20px;
   padding: 10px;
   background-color: #e0e0e0;
